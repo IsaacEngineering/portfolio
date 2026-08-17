@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Isaac Dreves | Engineering Portfolio</title>
+  <meta name="description" content="Isaac Dreves — Mechanical &amp; Aerospace Engineering student at Case Western Reserve University. CAD, manufacturing, and embedded-systems project portfolio.">
+
+  <!-- Open Graph / social link previews -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Isaac Dreves | Engineering Portfolio">
+  <meta property="og:title" content="Isaac Dreves | Engineering Portfolio">
+  <meta property="og:description" content="Mechanical & Aerospace Engineering student project portfolio.">
+  <meta property="og:image" content="https://isaacengineering.github.io/portfolio/assets/images/headshot.jpg">
+  <meta property="og:url" content="https://[username].github.io/portfolio/">
+
+
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=JetBrains+Mono:wght@400;700&family=Saira+Condensed:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div id="scroll-progress"></div>
+  <div class="nav-backdrop"></div>
+
+  <!-- Navigation -->
+  <header>
+    <div class="container navbar">
+      <a href="index.html" class="logo">
+        <span class="logo-id">Isaac D</span><span class="logo-dot">.</span>
+      </a>
+      <button class="hamburger" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="home" class="hero">
+    <div class="container hero-content">
+
+      <div class="hero-text" data-reveal="left">
+        <span class="hero-eyebrow">
+          <!-- JS will inject typewriter here -->
+          <span id="hero-typewriter"></span><span class="typewriter-cursor">|</span>
+        </span>
+        <h1>Hi, I'm <span>Isaac</span></h1>
+        <svg class="hero-dimline" viewBox="0 0 340 14" preserveAspectRatio="none" aria-hidden="true">
+          <line x1="2" y1="1" x2="2" y2="13"></line>
+          <line x1="2" y1="7" x2="338" y2="7" class="hero-dimline-run"></line>
+          <line x1="338" y1="1" x2="338" y2="13"></line>
+        </svg>
+        <h2>Case Western Reserve University &nbsp;·&nbsp; Class of 2028</h2>
+        <p>
+          I enjoy every step of the engineering process, taking an idea or concept
+          and bringing it to life as a final product. Two years into my degree, I'm 
+          excited to get my hands dirty using my experience in CAD, fabrication, and systems
+          in an internship or co-op role.
+        </p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">View Projects</a>
+          <a href="#about" class="btn btn-outline">About Me</a>
+        </div>
+      </div>
+
+      <div class="hero-image" data-reveal="right">
+        <div class="hero-image-inner">
+          <img src="assets/images/headshot.jpg" alt="Isaac Headshot">
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Spec Plate (Skills) -->
+  <section class="spec-plate" id="skills">
+    <div class="container">
+      <div class="spec-plate-head" data-reveal>
+        <h2 class="spec-plate-title">Technical <span>Skills</span></h2>
+        <span class="spec-plate-tag">Rev 2026</span>
+      </div>
+
+      <div class="spec-grid" data-reveal>
+
+        <div class="spec-row">
+          <span class="spec-row-index">01 / DESIGN</span>
+          <p class="spec-row-label">CAD &amp; Simulation</p>
+          <div class="spec-row-items">
+            <span class="spec-chip" style="--level:85%" title="Proficiency: 85%">SolidWorks<span class="chip-meter" aria-hidden="true"><span class="chip-meter-fill"></span></span></span>
+            <span class="spec-chip spec-chip--cert">CSWA Certified</span>
+            <span class="spec-chip" style="--level:70%" title="Proficiency: 70%">PDM<span class="chip-meter" aria-hidden="true"><span class="chip-meter-fill"></span></span></span>
+            <span class="spec-chip" style="--level:95%" title="Proficiency: 95%">Fusion 360<span class="chip-meter" aria-hidden="true"><span class="chip-meter-fill"></span></span></span>
+            <span class="spec-chip" style="--level:65%" title="Proficiency: 65%">Static FEA<span class="chip-meter" aria-hidden="true"><span class="chip-meter-fill"></span></span></span>
+            <span class="spec-chip" style="--level:70%" title="Proficiency: 70%">GD&amp;T<span class="chip-meter" aria-hidden="true"><span class="chip-meter-fill"></span></span></span>
+          </div>
+        </div>
+
+        <div class="spec-row">
+          <span class="spec-row-index">02 / BUILD</span>
+          <p class="spec-row-label">Fabrication &amp; Lab</p>
+          <div class="spec-row-items">
+            <span class="spec-chip" style="--level:65%" title="Proficiency: 65%">Manual Mill &amp; Lathe<span class="chip-meter" aria-hidden="true"><span class="chip-meter-fill"></span></span></span>
+            <span class="spec-chip" style="--level:99%" title="Proficiency: 99%">FDM 3D Printing<span class="chip-meter" aria-hidden="true"><span class="chip-meter-fill"></span></span></span>
+            <span class="spec-chip" style="--level:90%" title="Proficiency: 90%">Laser Cutting<span class="chip-meter" aria-hidden="true"><span class="chip-meter-fill"></span></span></span>
+            <span class="spec-chip" style="--level:85%" title="Proficiency: 85%">Multimeter<span class="chip-meter" aria-hidden="true"><span class="chip-meter-fill"></span></span></span>
+          </div>
+        </div>
+
+        <div class="spec-row">
+          <span class="spec-row-index">03 / CONTROL</span>
+          <p class="spec-row-label">Programming &amp; Embedded</p>
+          <div class="spec-row-items">
+            <span class="spec-chip" style="--level:80%" title="Proficiency: 80%">MATLAB<span class="chip-meter" aria-hidden="true"><span class="chip-meter-fill"></span></span></span>
+            <span class="spec-chip" style="--level:60%" title="Proficiency: 60%">Arduino / C<span class="chip-meter" aria-hidden="true"><span class="chip-meter-fill"></span></span></span>
+            <span class="spec-chip" style="--level:75%" title="Proficiency: 75%">Numerical Methods<span class="chip-meter" aria-hidden="true"><span class="chip-meter-fill"></span></span></span>
+          </div>
+        </div>
+
+        <div class="spec-row">
+          <span class="spec-row-index">04 / DELIVER</span>
+          <p class="spec-row-label">Engineering Workflow</p>
+          <div class="spec-row-items">
+            <span class="spec-chip" style="--level:85%" title="Proficiency: 85%">Technical Documentation<span class="chip-meter" aria-hidden="true"><span class="chip-meter-fill"></span></span></span>
+            <span class="spec-chip" style="--level:90%" title="Proficiency: 90%">BOM Management<span class="chip-meter" aria-hidden="true"><span class="chip-meter-fill"></span></span></span>
+            <span class="spec-chip" style="--level:75%" title="Proficiency: 75%">Sourcing<span class="chip-meter" aria-hidden="true"><span class="chip-meter-fill"></span></span></span>
+            <span class="spec-chip" style="--level:85%" title="Proficiency: 85%">Excel<span class="chip-meter" aria-hidden="true"><span class="chip-meter-fill"></span></span></span>
+            <span class="spec-chip" style="--level:80%" title="Proficiency: 80%">Project Management<span class="chip-meter" aria-hidden="true"><span class="chip-meter-fill"></span></span></span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="projects">
+    <div class="container">
+      <h2 class="section-title" data-reveal="scale">Featured Projects</h2>
+
+      <div class="project-filters" data-reveal>
+        <button class="btn btn-primary filter-btn active" data-filter="all" aria-pressed="true">All</button>
+        <button class="btn btn-outline filter-btn" data-filter="student-teams" aria-pressed="false">Student Teams</button>
+        <button class="btn btn-outline filter-btn" data-filter="manufacturing" aria-pressed="false">Manufacturing</button>
+        <button class="btn btn-outline filter-btn" data-filter="cad" aria-pressed="false">CAD</button>
+        <button class="btn btn-outline filter-btn" data-filter="independent-project" aria-pressed="false">Independent Project</button>
+      </div>
+
+      <div class="project-grid">
+
+        <!-- Project 1 — Trash Compactor (live) -->
+        <a href="trashcan.html" class="project-card" data-category="student-teams cad" data-reveal>
+          <div class="project-img-wrap">
+            <img src="assets/images/trashOpen.png" alt="Manual Trash Compactor" class="project-img" loading="lazy" decoding="async">
+          </div>
+          <div class="project-info">
+            <div class="project-tags">
+              <span class="project-tag">CAD</span>
+              <span class="project-tag">DFM</span>
+              <span class="project-tag">Student Team</span>
+            </div>
+            <h3>Manual Trash Compactor</h3>
+            <p>Led a 4 person team from concept to commercial ready design — 25+ DFM driven drawings, motion studies, and final renders.</p>
+            <span class="project-readmore">Read More</span>
+          </div>
+        </a>
+
+        <!-- Project 2 — VTOL Drone (live) -->
+        <a href="droneGear.html" class="project-card" data-category="manufacturing cad student-teams" data-reveal>
+          <div class="project-img-wrap">
+            <img src="assets/images/gearCAD.png" alt="VTOL Drone Landing Gear" class="project-img" loading="lazy" decoding="async">
+          </div>
+          <div class="project-info">
+            <div class="project-tags">
+              <span class="project-tag">CAD</span>
+              <span class="project-tag">FEA</span>
+              <span class="project-tag">Student Team</span>
+              <span class="project-tag">Manufacturing</span>
+            </div>
+            <h3>VTOL Drone Landing Gear</h3>
+            <p>Retractable landing gear for a competition VTOL drone — FEA optimized for strength to weight, built within a 50+ person team.</p>
+            <span class="project-readmore">Read More</span>
+          </div>
+        </a>
+
+        <!-- Project 3 — Hydroponics (live) -->
+        <a href="hydroponics.html" class="project-card" data-category="independent-project cad" data-reveal>
+          <div class="project-img-wrap">
+            <img src="assets/images/lettuceGrowth.jpg" alt="Hydroponic System" class="project-img" loading="lazy" decoding="async">
+          </div>
+          <div class="project-info">
+            <div class="project-tags">
+              <span class="project-tag">Independent Project</span>
+              <span class="project-tag">CAD</span>
+            </div>
+            <h3>Hydroponic System</h3>
+            <p>Indoor hydroponic system for leafy greens — 4× yield per sq ft, year long sustainable growth.</p>
+            <span class="project-readmore">Read More</span>
+          </div>
+        </a>
+
+        <!-- Projects 4–6 — Coming Soon placeholders -->
+        <div class="project-card project-card--soon" data-reveal>
+          <div class="project-img-wrap project-img-wrap--soon">
+            <div class="soon-glyph">
+              <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/>
+              </svg>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>Coming Soon</h3>
+            <p>Next project in progress. Stay tuned.</p>
+          </div>
+        </div>
+
+        <div class="project-card project-card--soon" data-reveal>
+          <div class="project-img-wrap project-img-wrap--soon">
+            <div class="soon-glyph">
+              <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/>
+              </svg>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>Coming Soon</h3>
+            <p>Next project in progress. Stay tuned.</p>
+          </div>
+        </div>
+
+        <div class="project-card project-card--soon" data-reveal>
+          <div class="project-img-wrap project-img-wrap--soon">
+            <div class="soon-glyph">
+              <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/>
+              </svg>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>Coming Soon</h3>
+            <p>Next project in progress. Stay tuned.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- About Me -->
+  <section id="about" class="about">
+    <div class="container">
+      <h2 class="section-title" data-reveal="scale">About Me</h2>
+      <div class="about-grid">
+
+        <div class="about-text" data-reveal="left">
+          <h3>Background</h3>
+          <p>
+            I'm a Mechanical and Aerospace Engineering student with a passion for innovation 
+            and helping people. My coursework has built a strong foundation in thermodynamics, 
+            dynamics, circuits, and numerical modeling, while personal and student team projects 
+            have sharpened my skills in SolidWorks CAD/FEA, Design for Manufacturing, and project management skills.
+          </p>
+          <p>
+            Outside engineering, I enjoy getting out in nature — fishing, backpacking, or playing
+            soccer. I also like working with my hands practicing woodworking, art, and working on 
+            cars.
+          </p>
+          <div class="edu-block">
+            <strong>B.S. Mechanical &amp; Aerospace Engineering</strong>
+            <span class="edu-meta">
+              Case Western Reserve University &nbsp;·&nbsp; 2024 – Expected 2028
+              &nbsp;·&nbsp; <span class="edu-gpa">GPA 3.76 / 4.0</span>
+            </span>
+          </div>
+          <div class="about-actions">
+            <a href="resume.html" class="btn btn-outline">View Resume</a>
+            <a href="assets/docs/Dreves2026Resume.pdf" download="IsaacDrevesResume.pdf" class="btn btn-primary">Download Resume</a>
+          </div>
+        </div>
+
+        <div class="about-collage" data-reveal="right">
+          <img src="assets/images/backpack.jpg" alt="Isaac outdoors" loading="lazy" decoding="async">
+          <img src="assets/images/engine.jpg" alt="Engine" loading="lazy" decoding="async">
+          <img src="assets/images/desk.jpeg" alt="woodworking" loading="lazy" decoding="async">
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2 class="section-title" data-reveal="scale">Get In Touch</h2>
+      <p class="subtext" data-reveal>
+        Currently seeking internship and co-op opportunities in mechanical or 
+        aerospace engineering for spring and summer 2027. 
+        Reach out via email or connect on LinkedIn.
+      </p>
+
+      <p class="contact-label" data-reveal="fade">Contact Me</p>
+      <div class="contact-email-wrap" data-reveal>
+        <a href="mailto:drevesisaac@gmail.com" class="contact-email">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <rect x="2" y="4" width="20" height="16" rx="2"/><polyline points="2,4 12,13 22,4"/>
+          </svg>
+          drevesisaac@gmail.com
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-inner">
+      <a href="index.html" class="footer-logo">
+        <img src="assets/images/favicon.svg" alt="Isaac Dreves logo" class="logo-icon">
+      </a>
+      <div class="social-links">
+        <a href="https://www.linkedin.com/in/isaac-dreves" target="_blank" rel="noopener" class="social-link" aria-label="LinkedIn">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+            <rect x="2" y="9" width="4" height="12"/>
+            <circle cx="4" cy="4" r="2"/>
+          </svg>
+          LinkedIn
+        </a>
+        <a href="https://github.com/IsaacEngineering" target="_blank" rel="noopener" class="social-link" aria-label="GitHub">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+          </svg>
+          GitHub
+        </a>
+      </div>
+      <p class="footer-copy">&copy; 2026 Isaac Dreves</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

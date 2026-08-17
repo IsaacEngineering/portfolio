@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Automated Hydroponic System | Isaac Dreves</title>
+  <meta name="description" content="An Arduino-based indoor hydroponic system by Isaac Dreves, achieving ~4× yield per square foot for leafy greens vs. soil cultivation.">
+
+  <!-- Open Graph / social link previews -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Isaac Dreves | Engineering Portfolio">
+  <meta property="og:title" content="Automated Hydroponic System | Isaac Dreves">
+  <meta property="og:description" content="Indoor hydroponic system achieving ~4× yield per square foot for leafy greens vs. soil cultivation.">
+  <meta property="og:image" content="https://isaacengineering.github.io/portfolio/assets/images/hydroponic.png">
+  <meta property="og:url" content="https://isaacengineering.github.io/portfolio/hydroponics.html">
+
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=JetBrains+Mono:wght@400;700&family=Saira+Condensed:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div id="scroll-progress"></div>
+  <div class="nav-backdrop"></div>
+
+  <!-- Navigation -->
+  <header>
+    <div class="container navbar">
+      <a href="index.html" class="logo">
+        <span class="logo-id">Isaac D</span><span class="logo-dot">.</span>
+      </a>
+      <button class="hamburger" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="index.html#home">Home</a></li>
+        <li><a href="index.html#skills">Skills</a></li>
+        <li><a href="index.html#projects">Projects</a></li>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- Project Hero Banner -->
+  <div class="project-hero-banner">
+    <img src="assets/images/lettuceYield.jpeg" alt="Hydroponic lettuce" class="project-hero-banner-img" id="hero-banner-img">
+    <div class="project-hero-banner-overlay"></div>
+    <div class="project-hero-banner-content container">
+      <p class="project-sub" data-reveal="fade">CAD &nbsp;·&nbsp; Independent Project &nbsp;·&nbsp; July 2025 – August 2025</p>
+      <h1 data-reveal="scale">Hydroponic System</h1>
+      <svg class="hero-dimline hero-dimline--light" data-reveal="fade" viewBox="0 0 340 14" preserveAspectRatio="none" aria-hidden="true">
+        <line x1="2" y1="1" x2="2" y2="13"></line>
+        <line x1="2" y1="7" x2="338" y2="7" class="hero-dimline-run"></line>
+        <line x1="338" y1="1" x2="338" y2="13"></line>
+      </svg>
+    </div>
+  </div>
+
+  <main class="container project-main">
+
+    <div class="project-content">
+
+      <!-- Body -->
+      <div class="project-body" data-reveal="left">
+
+        <!-- Key Results callout -->
+        <div class="project-results-row">
+          <div class="project-result-card">
+            <span class="project-result-num" data-count-to="2" data-prefix="~" data-suffix="×">~0×</span>
+            <span class="project-result-label">Faster growth cycles vs. soil</span>
+          </div>
+          <div class="project-result-card">
+            <span class="project-result-num" data-count-to="4" data-prefix="~" data-suffix="×">~0×</span>
+            <span class="project-result-label">Yield per square foot</span>
+          </div>
+          <div class="project-result-card">
+            <span class="project-result-num" data-type-text="NFT"></span>
+            <span class="project-result-label">Recirculating nutrient film</span>
+          </div>
+        </div>
+
+        <h2>Project Overview</h2>
+        <p>
+          The goal of this project was to design, build, and test a fully functional indoor hydroponic
+          system capable of year-round crop production for leafy greens. The system integrates fluid
+          management, LED grow lighting, and engineering drawings with BOMs.
+        </p>
+
+        <h2>Engineering Process</h2>
+        <p>
+          <strong>System Design:</strong> Sized the reservoir, pump, and grow channels to support a
+          continuous harvest cycle for lettuce. Designed a recirculating NFT (Nutrient Film
+          Technique) layout to minimize water consumption while maximizing root oxygenation.
+        </p>
+        <p>
+          <strong>Fabrication:</strong> Built the structure with construction lumber, PVC channel, and food-safe HDPE
+          reservoirs. Plumbing was designed for easy disassembly and cleaning between crop cycles.
+          LED spectrum and timing were tuned experimentally against plant growth data.
+        </p>
+        <p>
+          <strong>Automation (In Progress):</strong> Developing an Arduino-based controller using pH
+          and EC (electrical conductivity) sensors to monitor nutrient solution quality and trigger
+          automated dosing pumps, replacing manual testing and adjustment.
+        </p>
+
+        <h2>Results</h2>
+        <p>
+          The baseline system achieved approximately 2× faster growth cycles and 4× yield per
+          square foot for lettuce compared to traditional soil cultivation. Ongoing
+          automation work targets nutrient control without daily manual intervention.
+        </p>
+
+        <div class="project-carousel" data-carousel>
+          <div class="project-carousel-track" data-carousel-track>
+            <figure class="project-carousel-slide">
+              <img src="assets/images/hydroponic.png" alt="Grow channels and reservoir" style="aspect-ratio: 898 / 502;" loading="lazy" decoding="async">
+              <figcaption>Grow channels &amp; reservoir</figcaption>
+            </figure>
+            <figure class="project-carousel-slide">
+              <img src="assets/images/lettuceGrowth.jpg" alt="20 days progress" style="aspect-ratio: 1035 / 560;" loading="lazy" decoding="async">
+              <figcaption>20 day progress 2x faster vs traditional</figcaption>
+            </figure>
+          </div>
+
+          <button class="carousel-arrow carousel-arrow--prev" type="button" data-carousel-prev aria-label="Previous photo">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M15 18l-6-6 6-6"/>
+            </svg>
+          </button>
+          <button class="carousel-arrow carousel-arrow--next" type="button" data-carousel-next aria-label="Next photo">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M9 18l6-6-6-6"/>
+            </svg>
+          </button>
+
+          <div class="carousel-dots" data-carousel-dots></div>
+        </div>
+
+        <h2>Key Takeaways</h2>
+        <p>
+          Working start to finish on a physical system from layout to harvest
+          reinforced how early design decisions cascade into later fabrication and 
+          real outcomes. For example, having a central reservoir has made it possible 
+          for me to continue adding to the project with automated nutrient control.
+          Additionally, I learned a lot about the sustainability of hydroponic systems,
+          gaining a further appreciation for the intersection of sustainablility and engineering.
+          
+        </p>
+        <p>
+          The project is ongoing. Next steps: close the pH control loop
+          and run a fully automated crop cycle without any manual intervention.
+        </p>
+
+      </div>
+
+      <!-- Sidebar -->
+      <aside class="project-meta" data-reveal="right">
+        <h3>Technologies</h3>
+        <ul>
+          <li>Arduino</li>
+          <li>pH &amp; EC Sensors</li>
+          <li>Submersible Circulation Pump</li>
+          <li>PVC / HDPE Fabrication</li>
+          <li>Full-Spectrum LED Lighting</li>
+          <li>Fusion 360</li>
+        </ul>
+
+        <h3>Role</h3>
+        <ul><li>Sole Engineer &amp; Builder</li></ul>
+
+        <h3>Timeline</h3>
+        <ul><li>July 2025 – Present</li></ul>
+
+        <h3>Status</h3>
+        <ul>
+          <li>System operational ✓</li>
+          <li>Automation in progress</li>
+        </ul>
+
+        <a href="index.html#projects" class="btn btn-primary">&larr; All Projects</a>
+      </aside>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-inner">
+      <a href="index.html" class="footer-logo">
+        <img src="assets/images/favicon.svg" alt="Isaac Dreves logo" class="logo-icon">
+      </a>
+      <div class="social-links">
+        <a href="https://www.linkedin.com/in/isaac-dreves" target="_blank" rel="noopener" class="social-link" aria-label="LinkedIn">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+            <rect x="2" y="9" width="4" height="12"/>
+            <circle cx="4" cy="4" r="2"/>
+          </svg>
+          LinkedIn
+        </a>
+        <a href="https://github.com/IsaacEngineering" target="_blank" rel="noopener" class="social-link" aria-label="GitHub">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+          </svg>
+          GitHub
+        </a>
+      </div>
+      <p class="footer-copy">&copy; 2026 Isaac Dreves</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
